@@ -147,7 +147,7 @@ class WaveshareEPaperTypeA : public WaveshareEPaper {
   int get_width_controller() override;
 
   uint32_t full_update_every_{30};
-  uint32_t at_update_{0};
+  uint32_t at_update_{1};
   WaveshareEPaperTypeAModel model_;
   uint32_t idle_timeout_() override;
 
@@ -368,7 +368,7 @@ class WaveshareEPaper2P9InV2R2 : public WaveshareEPaper {
   int get_width_controller() override;
 
   uint32_t full_update_every_{30};
-  uint32_t at_update_{0};
+  uint32_t at_update_{1};
 
  private:
   void reset_();
@@ -733,7 +733,7 @@ class WaveshareEPaper2P13InDKE : public WaveshareEPaper {
   uint32_t idle_timeout_() override;
 
   uint32_t full_update_every_{30};
-  uint32_t at_update_{0};
+  uint32_t at_update_{1};
 };
 
 class WaveshareEPaper2P13InV3 : public WaveshareEPaper {
@@ -766,7 +766,7 @@ class WaveshareEPaper2P13InV3 : public WaveshareEPaper {
   void full_update_();
 
   uint32_t full_update_every_{30};
-  uint32_t at_update_{0};
+  uint32_t at_update_{1};
   bool is_busy_{false};
   void write_lut_(const uint8_t *lut);
 };
