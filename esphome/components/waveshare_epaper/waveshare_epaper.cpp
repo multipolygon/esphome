@@ -594,6 +594,8 @@ void WaveshareEPaperTypeA::set_full_update_every(uint32_t full_update_every) {
   this->full_update_every_ = full_update_every;
 }
 
+void WaveshareEPaperTypeA::do_full_update() { this->at_update_ = 0; }
+
 uint32_t WaveshareEPaperTypeA::idle_timeout_() {
   switch (this->model_) {
     case WAVESHARE_EPAPER_1_54_IN:

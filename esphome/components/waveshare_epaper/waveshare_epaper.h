@@ -135,6 +135,8 @@ class WaveshareEPaperTypeA : public WaveshareEPaper {
 
   void set_full_update_every(uint32_t full_update_every);
 
+  void do_full_update();
+
  protected:
   void write_lut_(const uint8_t *lut, uint8_t size);
 
